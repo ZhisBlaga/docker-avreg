@@ -1,0 +1,13 @@
+version: "3"
+services:
+  avreg:
+    build: .
+    ports:
+      - 8888:80
+    volumes:
+      - db-data:/var/lib/postgresql/13/main
+      - avreg:/home/avreg
+
+volumes:  
+  db-data:  
+  avreg:
