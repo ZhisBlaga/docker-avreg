@@ -23,8 +23,6 @@ service apache2 stop
 service postgresql stop
 service memcached stop
 
-# #change owner for pgsql docker volume
-# chown -R pgsql:pgsql /var/lib/pgsql
 
 service postgresql start
 service apache2 start
